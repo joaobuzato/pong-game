@@ -1,6 +1,7 @@
 from turtle import Screen
 from paddle import  Paddle
 from scoreboard import Scoreboard
+from middle_line import MiddleLine
 from ball import Ball
 import time
 
@@ -15,6 +16,7 @@ paddle_1 = Paddle(player_num=1)
 paddle_2 = Paddle(player_num=2)
 ball = Ball()
 scoreboard = Scoreboard()
+middle_line = MiddleLine()
 
 screen.onkey(key="Up", fun=paddle_1.move_up)
 screen.onkey(key="Down", fun=paddle_1.move_down)

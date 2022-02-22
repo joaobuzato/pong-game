@@ -6,7 +6,6 @@ class Paddle(Turtle):
     def __init__(self, player_num=1):
         super().__init__()
         self.penup()
-        self.score = 0
         self.color("white")
         self.shape("square")
         self.shapesize(stretch_len=5)
@@ -23,3 +22,4 @@ class Paddle(Turtle):
     def move_down(self):
         if self.ycor() > -240:
             self.backward(40)
+

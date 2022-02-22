@@ -18,3 +18,6 @@ class Ball(Turtle):
 
     def bounce(self):
         self.y_rate *= -1
+
+    def bounce_back(self):
+        self.x_rate *= -1

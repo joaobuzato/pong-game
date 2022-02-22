@@ -42,6 +42,10 @@ while game_is_on:
         ball.reset_position()
         scoreboard.r_point()
 
+    if scoreboard.l_score >= 3 or scoreboard.r_score >= 3:
+        scoreboard.game_over()
+        game_is_on = False
+
 
 
 

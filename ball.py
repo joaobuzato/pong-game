@@ -16,8 +16,9 @@ class Ball(Turtle):
         new_y = self.ycor() + self.y_rate
         self.goto(new_x, new_y)
 
-    def bounce(self):
-        self.y_rate *= -1
+    def bounce(self, cor='y'):
+        if cor=='y':
+            self.y_rate *= -1
+        elif cor =='x':
+            self.x_rate *= -1
 
-    def bounce_back(self):
-        self.x_rate *= -1

@@ -25,11 +25,11 @@ while game_is_on:
     time.sleep(0.05)
     ball.move()
     if ball.ycor() > 280 or ball.ycor() < -280:
-        ball.bounce()
+        ball.bounce('y')
     if ball.xcor() > 320 and ball.distance(paddle_1) < 50 :
-        ball.bounce_back()
+        ball.bounce('x')
     if ball.xcor() < -320 and ball.distance(paddle_2) < 50:
-        ball.bounce_back()
+        ball.bounce('x')
 
 
 

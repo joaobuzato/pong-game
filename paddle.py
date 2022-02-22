@@ -1,10 +1,12 @@
 from turtle import Turtle
 
+
 class Paddle(Turtle):
 
     def __init__(self, player_num=1):
         super().__init__()
         self.penup()
+        self.score = 0
         self.color("white")
         self.shape("square")
         self.shapesize(stretch_len=5)
